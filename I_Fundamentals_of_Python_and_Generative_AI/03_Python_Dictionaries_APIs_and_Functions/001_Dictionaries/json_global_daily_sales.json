@@ -1,0 +1,19 @@
+{
+	
+  "3942": {
+    "purchase_total": 100.50,
+    "currency": "CAD"
+  },
+  "8791": {
+    "purchase_total": 75.25,
+    "currency": "EUR"
+  },
+  "5623": {
+    "purchase_total": 50.75,
+    "currency": "GBP"
+  },
+  "1234": {
+    "purchase_total": 200.10,
+    "currency": "USD"
+  }
+}

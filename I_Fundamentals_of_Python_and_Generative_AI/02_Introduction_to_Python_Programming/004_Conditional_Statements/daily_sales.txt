@@ -1,0 +1,35 @@
+1,[Laptop;Keyboard;Mouse],942.49
+2,[Printer;Headphones;Docking Station],150.60
+3,[Laptop;Keyboard;Printer;Headphones],1013.69
+4,[Mouse;HDMI Cable],23.49
+5,[Laptop;Keyboard;Printer;Docking Station],1031.01
+6,[Mouse;Headphones;Docking Station],105.39
+7,[Laptop;HDMI Cable;Printer;Headphones],994.79
+8,[Keyboard;Mouse;Printer;Headphones],128.68
+9,[Laptop;Mouse;HDMI Cable;Docking Station],993.40
+10,[Keyboard;Mouse;Printer;Docking Station],166.60
+11,[Laptop;Keyboard;Headphones;Docking Station],1021.90
+12,[Mouse;HDMI Cable;Headphones],50.88
+13,[Laptop;HDMI Cable;Headphones;Docking Station],1089.80
+14,[Keyboard;Mouse;Printer],101.69
+15,[Laptop;Keyboard;Mouse;Printer;Headphones;Docking Station],2161.00
+16,[Mouse;HDMI Cable;Printer],80.69
+17,[Laptop;Headphones],926.99
+18,[Keyboard;Mouse;Headphones],70.48
+19,[Laptop;HDMI Cable;Printer;Docking Station],1032.11
+20,[Keyboard;HDMI Cable;Headphones;Docking Station],210.40
+21,[Laptop;Mouse;Printer;Headphones],998.68
+22,[HDMI Cable;Printer],67.70
+23,[Laptop;Keyboard;Mouse;Docking Station],1058.90
+24,[Mouse;Headphones;Docking Station],98.39
+25,[Laptop;Keyboard;HDMI Cable;Printer;Headphones],1568.38
+26,[Keyboard;Printer;Docking Station],153.11
+27,[Laptop;Mouse;Headphones],940.98
+28,[HDMI Cable;Headphones],36.49
+29,[Laptop;Keyboard;Mouse;Printer;Docking Station],1878.60
+30,[Mouse;Printer;Docking Station],141.10
+31,[Laptop;Keyboard;HDMI Cable;Headphones;Docking Station],1323.30
+32,[Keyboard;Mouse;Headphones;Docking Station],122.78
+33,[Laptop;HDMI Cable;Headphones],993.89
+34,[Mouse;HDMI Cable;Docking Station],84.40
+35,[Laptop;Keyboard;Printer],985.70

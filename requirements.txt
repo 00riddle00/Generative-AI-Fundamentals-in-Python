@@ -1,0 +1,11 @@
+beautifulsoup4
+black
+flake8
+Flake8-pyproject
+isort
+numpy
+openai
+pandas
+requests
+seaborn
+tiktoken
