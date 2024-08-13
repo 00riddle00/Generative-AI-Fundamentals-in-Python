@@ -12,7 +12,8 @@ response_1 = client.chat.completions.create(
     messages=[
         {
             "role": "system",
-            "content": "You are a creative assistant, skilled in crafting engaging marketing content for GlobalJava Roasters.",
+            "content": "You are a creative assistant, skilled in crafting engaging "
+            "marketing content for GlobalJava Roasters.",
         },
         {
             "role": "user",
@@ -26,7 +27,9 @@ response_2 = client.chat.completions.create(
     messages=[
         {
             "role": "system",
-            "content": "You are a creative assistant skilled in crafting engaging marketing content for GlobalJava Roasters, and you have a flair for using language that evokes the aroma and taste of coffee.",
+            "content": "You are a creative assistant skilled in crafting engaging "
+            "marketing content for GlobalJava Roasters, and you have a flair "
+            "for using language that evokes the aroma and taste of coffee.",
         },
         {
             "role": "user",

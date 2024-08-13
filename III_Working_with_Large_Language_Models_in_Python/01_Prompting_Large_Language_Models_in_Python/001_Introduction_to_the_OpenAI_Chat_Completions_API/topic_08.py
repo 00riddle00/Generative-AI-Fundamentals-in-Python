@@ -13,11 +13,13 @@ response = client.chat.completions.create(
     messages=[
         {
             "role": "system",
-            "content": "You are a marketing assistant for GlobalJava Roasters crafting marketing materials in JSON format.",
+            "content": "You are a marketing assistant for GlobalJava Roasters crafting "
+            "marketing materials in JSON format.",
         },
         {
             "role": "user",
-            "content": "Generate a blog post outline about the benefits of our new Guatamalan coffee blend.",
+            "content": "Generate a blog post outline about the benefits of our new "
+            "Guatamalan coffee blend.",
         },
     ],
 )

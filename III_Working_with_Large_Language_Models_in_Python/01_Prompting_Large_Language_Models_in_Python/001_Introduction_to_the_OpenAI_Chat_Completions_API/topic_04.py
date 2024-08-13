@@ -13,7 +13,8 @@ response = client.chat.completions.create(
         {"role": "system", "content": "You are a helpful assistant."},
         {
             "role": "user",
-            "content": "Help me write a hook for a new blog post about our Ethiopian dark roast.",
+            "content": "Help me write a hook for a new blog post about our Ethiopian "
+            "dark roast.",
         },
     ],
 )

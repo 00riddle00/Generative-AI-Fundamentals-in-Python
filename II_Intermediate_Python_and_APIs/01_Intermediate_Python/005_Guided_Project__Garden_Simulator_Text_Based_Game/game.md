@@ -263,7 +263,8 @@ print(
 # Create gardener
 gardener_name = input("What is your name? ")
 print(
-    f"Welcome, {gardener_name}! Let's get gardening!\nType 'help' for a list of commands."
+    f"Welcome, {gardener_name}! Let's get gardening!\nType 'help' for a list of "
+    f"commands."
 )
 gardener = Gardener(gardener_name)
 ```

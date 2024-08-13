@@ -5,4 +5,5 @@ def convert_amount(exchange_rate):
 
 
 convert_amount(3.5)
+# Should throw a NameError:
 print(amount)

@@ -17,7 +17,8 @@ response = client.chat.completions.create(
         },
         {
             "role": "user",
-            "content": "Generate a blog post outline about the benefits of our new Guatamalan coffee blend.",
+            "content": "Generate a blog post outline about the benefits of our new "
+            "Guatamalan coffee blend.",
         },
     ],
 )
@@ -34,7 +35,8 @@ response = client.chat.completions.create(
         },
         {
             "role": "user",
-            "content": "Generate a tweet about the benefits of our new Guatamalan coffee blend.",
+            "content": "Generate a tweet about the benefits of our new Guatamalan "
+            "coffee blend.",
         },
     ],
 )

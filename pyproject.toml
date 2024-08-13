@@ -33,11 +33,3 @@ extend-ignore = [
 profile = "black"
 line_length = 88
 skip = [".venv", "venv"]
-
-# ==== mypy ====
-[tool.mypy]
-python_version = "3.12"
-exclude = [
-    ".venv",
-    "venv",
-]

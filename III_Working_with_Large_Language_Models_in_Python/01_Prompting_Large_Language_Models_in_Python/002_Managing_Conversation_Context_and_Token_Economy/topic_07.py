@@ -44,7 +44,8 @@ class ConversationManager:
         self.token_budget = token_budget
         self.system_message = None
         self.system_messages = {
-            "creative_assistant": "You are a creative assistant for GlobalJava Roasters."
+            "creative_assistant": "You are a creative assistant for GlobalJava "
+            "Roasters."
         }
         self.conversation_history = []
 
@@ -123,7 +124,10 @@ class ConversationManager:
 conv_manager = ConversationManager()
 conv_manager.set_persona("creative_assistant")
 
-prompt = "Write a captivating product description for our new coffee blend, 'Sunrise Surprise'."
+prompt = (
+    "Write a captivating product description for our new coffee blend, 'Sunrise "
+    "Surprise'."
+)
 response_text = conv_manager.chat_completion(prompt)
 print(f"Creative Assistant AI Response: {response_text}")
 print()

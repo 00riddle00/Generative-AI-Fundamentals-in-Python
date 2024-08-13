@@ -12,11 +12,13 @@ response = client.chat.completions.create(
     messages=[
         {
             "role": "system",
-            "content": "You are a creative assistant skilled in crafting engaging marketing content for GlobalJava Roasters.",
+            "content": "You are a creative assistant skilled in crafting engaging "
+            "marketing content for GlobalJava Roasters.",
         },
         {
             "role": "user",
-            "content": "How do I write effective system messages for the GlobalJava Roasters marketing assistant AI?",
+            "content": "How do I write effective system messages for the GlobalJava "
+            "Roasters marketing assistant AI?",
         },
     ],
 )

@@ -51,9 +51,12 @@ class ConversationManager:
         self.conversation_history = []
 
         self.system_messages = {
-            "blogger": "You are a creative blogger specializing in engaging and informative content for GlobalJava Roasters.",
-            "social_media_expert": "You are a social media expert, crafting catchy and shareable posts for GlobalJava Roasters.",
-            "creative_assistant": "You are a creative assistant skilled in crafting engaging marketing content for GlobalJava Roasters.",
+            "blogger": "You are a creative blogger specializing in engaging and "
+            "informative content for GlobalJava Roasters.",
+            "social_media_expert": "You are a social media expert, crafting catchy "
+            "and shareable posts for GlobalJava Roasters.",
+            "creative_assistant": "You are a creative assistant skilled in crafting "
+            "engaging marketing content for GlobalJava Roasters.",
             "custom": "Enter your custom system message here.",
         }
         # Default persona
@@ -90,7 +93,8 @@ class ConversationManager:
             self.update_system_message_in_history()
         else:
             raise ValueError(
-                f"Unknown persona: {persona}. Available personas are: {list(self.system_messages.keys())}"
+                f"Unknown persona: {persona}. Available personas are: "
+                f"{list(self.system_messages.keys())}"
             )
 
     def set_custom_system_message(self, custom_message):
@@ -123,7 +127,8 @@ class ConversationManager:
             ]
         except json.JSONDecodeError:
             print(
-                "Error reading the conversation history file. Starting with an initial history."
+                "Error reading the conversation history file. Starting with an "
+                "initial history."
             )
             self.conversation_history = [
                 {"role": "system", "content": self.system_message}

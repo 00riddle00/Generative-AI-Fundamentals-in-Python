@@ -13,7 +13,8 @@ response_1 = client.chat.completions.create(
         {"role": "system", "content": "You are a helpful assistant."},
         {
             "role": "user",
-            "content": "Help me brainstorm a blog post hook for our new medium roast coffee blend from Kenya.",
+            "content": "Help me brainstorm a blog post hook for our new medium roast "
+            "coffee blend from Kenya.",
         },
     ],
     temperature=0.3,
@@ -25,7 +26,8 @@ response_2 = client.chat.completions.create(
         {"role": "system", "content": "You are a helpful assistant."},
         {
             "role": "user",
-            "content": "Help me brainstorm a blog post hook for our new medium roast coffee blend from Kenya.",
+            "content": "Help me brainstorm a blog post hook for our new medium roast "
+            "coffee blend from Kenya.",
         },
     ],
     temperature=0.9,
@@ -37,7 +39,8 @@ response_3 = client.chat.completions.create(
         {"role": "system", "content": "You are a helpful assistant."},
         {
             "role": "user",
-            "content": "Help me brainstorm a blog post hook for our new medium roast coffee blend from Kenya.",
+            "content": "Help me brainstorm a blog post hook for our new medium roast "
+            "coffee blend from Kenya.",
         },
     ],
     temperature=1.3,
