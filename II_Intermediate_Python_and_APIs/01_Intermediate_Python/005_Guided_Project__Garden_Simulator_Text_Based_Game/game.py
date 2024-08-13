@@ -129,9 +129,9 @@ class Carrot(Plant):
 
 def select_item(items):
     # Determine if items is a dictionary or a list
-    if type(items) == dict:
+    if type(items) is dict:
         item_list = list(items.keys())
-    elif type(items) == list:
+    elif type(items) is list:
         item_list = items
     else:
         print("Invalid items type.")
@@ -140,7 +140,7 @@ def select_item(items):
     for i in range(len(item_list)):
         try:
             item_name = item_list[i].name
-        except:
+        except Exception:
             item_name = item_list[i]
         print(f"{i + 1}. {item_name}")
 
@@ -153,7 +153,7 @@ def select_item(items):
                 return item_list[user_input - 1]
             else:
                 print("Invalid input.")
-        except:
+        except Exception:
             print("Invalid input.")
 
 
@@ -228,7 +228,7 @@ class Gardener:
 
     def harvest(self):
         selected_plant = select_item(self.planted_plants)
-        if selected_plant.harvestable == True:
+        if selected_plant.harvestable is True:
             if selected_plant.name in self.inventory:
                 self.inventory[selected_plant.name] += selected_plant.harvest()
             else:

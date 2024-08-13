@@ -7,7 +7,7 @@ class Animal:
         print(f"Name: {self.name}, Age: {self.age}")
 
     def eat(self):
-        print(f"This animal is eating.")
+        print("This animal is eating.")
 
     def move(self):
         pass

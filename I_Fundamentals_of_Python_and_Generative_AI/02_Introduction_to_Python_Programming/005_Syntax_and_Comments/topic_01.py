@@ -1,4 +1,4 @@
-"""Exercise: 
+"""Exercise:
     Sum the even numbers in a list"""
 
 # List of numbers to include both odd and even

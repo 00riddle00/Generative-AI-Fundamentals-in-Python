@@ -8,7 +8,7 @@ class Animal:
         print(f"Name: {self.name}, Age: {self.age}")
 
     def eat(self):
-        print(f"This animal is eating.")
+        print("This animal is eating.")
         self._is_hungry = False
 
     def age_up(self):
@@ -52,11 +52,6 @@ class Elephant(Animal):
             self._trunk_length = length
         else:
             print("Trunk length must be between 0 and 3 meters.")
-
-    def _use_trunk(self):
-        if self.age < 1 or self._trunk_length < 1.2:
-            return False
-        return True
 
 
 bubbles_the_elephant = Elephant("Bubbles", 2, 1.83)
