@@ -9,4 +9,5 @@ openai
 pandas
 requests
 seaborn
+streamlit==1.37.1
 tiktoken
