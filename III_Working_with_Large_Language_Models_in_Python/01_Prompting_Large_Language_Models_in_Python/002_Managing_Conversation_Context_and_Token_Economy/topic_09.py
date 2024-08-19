@@ -154,15 +154,8 @@ class ConversationManager:
             max_tokens=max_tokens,
         )
 
-        self.conversation_history.append(
-            {
-                "role": response.choices[0].message.role,
-                "content": response.choices[0].message.content,
-            }
-        )
         ai_response = response.choices[0].message.content
         self.conversation_history.append({"role": "assistant", "content": ai_response})
-
         self.save_conversation_history()
 
         return ai_response
