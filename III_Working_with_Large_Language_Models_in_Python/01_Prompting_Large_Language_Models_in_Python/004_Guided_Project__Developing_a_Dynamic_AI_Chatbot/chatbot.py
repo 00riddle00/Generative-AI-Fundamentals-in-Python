@@ -163,30 +163,25 @@ class ConversationManager:
                 f"history: {e}"
             )
 
-    def chat_completion(self, prompt, temperature=None, max_tokens=None):
+    def chat_completion(self, prompt, temperature=None, max_tokens=None, model=None):
         temperature = temperature if temperature is not None else self.temperature
         max_tokens = max_tokens if max_tokens is not None else self.max_tokens
+        model = model if model is not None else self.model
 
         self.conversation_history.append({"role": "user", "content": prompt})
         self.enforce_token_budget()
 
         try:
             response = self.client.chat.completions.create(
-                model=self.model,
+                model=model,
                 messages=self.conversation_history,
                 temperature=temperature,
                 max_tokens=max_tokens,
             )
         except Exception as e:
-            print(f"Error generating response: {e}")
+            print(f"An error occurred while generating a response: {e}")
             return None
 
-        self.conversation_history.append(
-            {
-                "role": response.choices[0].message.role,
-                "content": response.choices[0].message.content,
-            }
-        )
         ai_response = response.choices[0].message.content
         self.conversation_history.append({"role": "assistant", "content": ai_response})
         self.save_conversation_history()
@@ -269,8 +264,7 @@ thoughtful_response = conv_manager.chat_completion(
     "apetizing shade of the color to use? Please be specific about why it's a good "
     "shade to use."
 )
-print(thoughtful_response)
-# Example response:
+print(thoughtful_response)  # Example response:
 #
 # """
 # *Sigh* Fine, let's get this over with.
